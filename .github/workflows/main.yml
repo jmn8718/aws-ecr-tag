@@ -1,0 +1,22 @@
+# on: [push]
+
+# jobs:
+#   tag_job:
+#     runs-on: ubuntu-latest
+#     name: Tag ECR image with new tag
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+#       - name: Hello world action step
+#         uses: actions/aws-ecr-tag@v1
+#         id: tag-image
+#         with:
+#           access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           region: ${{ secrets.REGION }}
+#           ecr_repository: ${{ secrets.ECR_REPOSITORY }}
+#           ecr_tag: "develop"
+#           tag: "test"
+#       # Use the output from the `tag-image` step
+#       - name: Get the output digest
+#         run: echo "Image Tagged Digest => ${{ steps.tag-image.outputs.digest }}"

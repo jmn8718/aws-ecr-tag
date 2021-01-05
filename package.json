@@ -1,0 +1,25 @@
+{
+  "name": "aws-ecr-tag",
+  "version": "1.0.0",
+  "description": "Tag ECR Image",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "aws-sdk": "^2.821.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.26.1",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "prepare": "ncc build index.js -o dist --source-map",
+    "test": "jest"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "Jose Miguel Navarro <jmn8718@gmail.com>",
+  "license": "ISC"
+}
