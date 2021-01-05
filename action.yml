@@ -30,7 +30,7 @@ outputs:
     description: 'Digest of tagged ECR image'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
 branding:
   color: 'orange'
   icon: 'bookmark'
