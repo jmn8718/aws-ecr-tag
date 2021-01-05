@@ -38,7 +38,7 @@ The tagged image digest
 
 ```yml
 - name: Tag ECR Image with new tag
-  uses: actions/aws-ecr-tag@v1
+  uses: jmn8718/aws-ecr-tag@v1
   id: tag-image
   with:
     access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
